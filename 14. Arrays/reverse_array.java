@@ -15,12 +15,16 @@ public class reverse_array {
             arr[i] = sc.nextInt();
         }
 
+        // Logic using for loop
+
         int new_arr[] = new int[n];
         int c = 0;
         for(int i = n-1; i>=0; i--){
             new_arr[c] = arr[i];
             c++;
         }
+
+        // Logic using while loop
 
         int f = 0;
         int e = n-1;
