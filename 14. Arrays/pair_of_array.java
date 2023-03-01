@@ -11,7 +11,6 @@ public class pair_of_array {
     }
     public static void main(String args[]){
         int arr[] = {2,4,6,8,10};
-
         pairs_in_array(arr);
         
     }
