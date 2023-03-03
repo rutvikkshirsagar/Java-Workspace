@@ -16,15 +16,12 @@ public class maxSubarraySum {
             for(int j = i+1; j<n; j++){
                 for(int k = i; k<=j; k++){
                     sum=sum + arr[k];
-                    //System.out.println(sum);
                 }
                 if(sum>max_sum){
                     max_sum = sum;
                 }
                 sum = 0;
-                //System.out.println();
             }
-            //System.out.println();
         }
         System.out.println(max_sum);
     }
