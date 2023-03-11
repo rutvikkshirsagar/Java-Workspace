@@ -1,8 +1,8 @@
 // Given a route conataning 4 directions (E, W, N, S), find the shortest path of route distination.
 
 public class shortest_path {
-    public static int shortestPath(String path){
-        int displacement = 0;
+    public static float shortestPath(String path){
+        float displacement = 0;
         int x = 0, y = 0;
         for(int i = 0; i<path.length(); i++){
             if(path.charAt(i)=='E'){
@@ -19,7 +19,7 @@ public class shortest_path {
             }
         }
 
-        displacement = (int)Math.sqrt((x*x)+(y*y));
+        displacement = (float)Math.sqrt((x*x)+(y*y));
         return displacement;
     }
     public static void main(String args[]){
