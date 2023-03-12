@@ -17,5 +17,8 @@ public class subString {
         int end = sc.nextInt();
 
         System.out.println("Substring is "+substring(s, str, end));
+
+        // using fuction .substring(start,end);
+        System.out.println(s.substring(str,end));
     }
 }
