@@ -17,28 +17,29 @@ public class constructors {
         s3.display();
         System.out.println();
         s2.marks[0] = 100;
-        for(int i = 0; i<3; i++){
-            System.out.println(s3.marks[i]);
-        }
+        s2.display();
     }
 }
 
 class student{
     String name;
     int age;
-    int marks[] = new int[3];
+    int marks[];
 
     // default constructor
     student(){
+        marks = new int[3];
         System.out.println("Constructor called.. ");
     }
     // parameterised constructor
     student(String name, int age){
+        marks = new int[3];
         this.name = name;
         this.age = age;
     }
     // Copy constructor
     student(student s1){
+        marks = new int[3];
         this.name = s1.name;
         this.age = s1.age;
         this.marks[0] = s1.marks[0];
