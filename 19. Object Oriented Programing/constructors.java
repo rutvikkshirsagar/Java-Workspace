@@ -12,12 +12,12 @@ public class constructors {
         student s3 = new student(s2);
 
         
-        s1.display();
+        //s1.display();
         s2.display();
         s3.display();
         System.out.println();
         s2.marks[0] = 100;
-        s2.display();
+        s3.display();
     }
 }
 
@@ -37,16 +37,25 @@ class student{
         this.name = name;
         this.age = age;
     }
-    // Copy constructor
+    //Shallow Copy constructor
+    // student(student s1){
+    //     marks = new int[3];
+    //     this.name = s1.name;
+    //     this.age = s1.age;
+    //     this.marks = s1.marks;
+        
+    // }
+
+    //Deep copy constructor
     student(student s1){
         marks = new int[3];
         this.name = s1.name;
         this.age = s1.age;
-        this.marks[0] = s1.marks[0];
-        this.marks[1] = s1.marks[1];
-        this.marks[2] = s1.marks[2];
-        
+        for(int i = 0; i<marks.length; i++){
+            this.marks[i] = s1.marks[i];
+        }
     }
+
     void display(){
         System.out.println();
         System.out.println(this.name+" ");
